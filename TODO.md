@@ -6,3 +6,7 @@
 * [전략 패턴](https://victorydntmd.tistory.com/292)
 * [spring datasource.url, datasource.jdbc-url](https://jojoldu.tistory.com/296)
 * [HashMap을 효과적으로 사용하는 방법](http://tech.javacafe.io/2018/12/03/HashMap/)
+* 꼭! 클린코드 끝나면 회사에서 뭐든 발표해보자
+
+---
+* 클린코드 교육 내용 정리
