@@ -6,6 +6,7 @@
 * [전략 패턴](https://victorydntmd.tistory.com/292)
 * [spring datasource.url, datasource.jdbc-url](https://jojoldu.tistory.com/296)
 * [HashMap을 효과적으로 사용하는 방법](http://tech.javacafe.io/2018/12/03/HashMap/)
+* comparable, compareTo
 * 내가 자주 사용하는 Intellij 단축키
 * Shell script 기초 정리
 * SQL 기초 정리
