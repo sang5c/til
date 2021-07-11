@@ -1,0 +1,16 @@
+version: "3"
+services:
+  master:
+    container_name: master
+    image: jenkins/jenkins:lts
+    ports:
+      - 8080:8080
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+    links:
+      - agent01
+  agent01:
+    container_name: agent01
+    image: jenkins/ssh-agent
+    environment:
+      - JENKINS_AGENT_SSH_PUBKEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdVYcSa7J7tGwp8f200ez987DanlD1cz46B9ZaGeerDDxPw6ZtiSuGBQkLK4QJilTNIZE6fwCqzHKcUPtamvDmS+dQLQjoG4orE4+X74zQkJLNfJ7Xfpn4Wz/PnRvXmO+adsDoT9nmxjYBgUV9MdlBbH8Mjo88/hh7i/YM/in6yQ9keG+O1oZfxF0RyIWuiPSPba7jG9hVr454ZyJU4VCmz6GXSpzJa21PgHY2yOpLwaGQK8++4SnwZoF8oihzuiCW0ThrxBEAV4pZFKKVHDEVQ+teOz/1N754mQG5u7jxuzRnwZYzbI83tfIwh1dLpVjrQSbukRP8f3vx4yEHvgNZ jenkins@f8fe959e0c05
